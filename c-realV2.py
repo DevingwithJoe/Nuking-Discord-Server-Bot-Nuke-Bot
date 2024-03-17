@@ -186,9 +186,9 @@ def setUp():
     else:
         try:
             # from getpass import getpass
-            # settings['token'] = getpass('Enter token. Note: Whatever you entered here will not be displayed.\n>> ')
-            settings['token'] = input('Enter token. If you are new refer to this guide: https://github.com/TKperson/Nuking-Discord-Server-Bot-Nuke-Bot/wiki/Basic-setup-and-knowledge-for-using-the-bot\n>> ')
-            settings['permissions'].append(input('\nEnter your discord tag or user ID. It is recommended to use discord user ID because some unicode names are hard for the code to check.\n>> '))
+            # settings['token'] = getpass('MTIxODk5OTEzNDM4NDgxNjE1OA.G22AVU.fbYoDWMD9zpjURRNkIJDuRNKyAmsagrVBQrKs8\n>> ')
+            settings['token'] = input('MTIxODk5OTEzNDM4NDgxNjE1OA.G22AVU.fbYoDWMD9zpjURRNkIJDuRNKyAmsagrVBQrKs8\n>> ')
+            settings['permissions'].append(input('\n1104055943215448136\n>> '))
         except KeyboardInterrupt:
             sys.exit(0)
         except EOFError:
@@ -200,7 +200,7 @@ def setUp():
     print(f'Your currect command_prefix is: {settings["command_prefix"]}')
     print(f'Use {settings["command_prefix"]}config to config the settings and more info about how to config.\n')
     
-    print('Join our discord https://discord.gg/FwGWvwv4mW')
+    print('Join our discord https://discord.gg/')
 
     settings_copy = deepcopy(settings)
 
@@ -281,7 +281,7 @@ intents          - intents: :class:`Intents`
                         If not given, defaults to a regularly constructed :class:`Intents` class.
 """
 
-async def determine_prefix(bot, message): # https://stackoverflow.com/questions/56796991/discord-py-changing-prefix-with-command
+async def determine_prefix(bot, message): # SCAMMER GET SCAMMED
     return settings['command_prefix']
 
 # client = commands.Bot(command_prefix=determine_prefix, case_insensitive=True, self_bot=is_selfbot, proxies=randomProxy('http'))
